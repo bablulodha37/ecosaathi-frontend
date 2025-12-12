@@ -1,0 +1,252 @@
+/* PURE PAGE BACKGROUND – NAVBAR KE NICHE POORA AREA */
+.login-page {
+  width: 100%;
+  min-height: calc(100vh - 64px); /* approx navbar height, adjust if needed */
+  display: flex;
+  background: #f3f4f6;
+}
+
+/* LEFT GREEN SIDE */
+.login-left {
+  flex: 1.1;
+  background: linear-gradient(160deg, #1dbf73, #0aa567, #087e55);
+  color: #ffffff;
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+.login-left-inner {
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 520px;
+}
+
+/* BRAND TEXT */
+.brand-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.brand-sub {
+  margin: 6px 0 30px;
+  opacity: 0.9;
+}
+
+/* MAIN HEADING / PARA */
+.main-heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.3;
+  max-width: 380px;
+  margin: 0;
+}
+
+.main-heading span {
+  color: #d7ffe6;
+}
+
+.main-sub {
+  max-width: 360px;
+  margin-top: 18px;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* STATS BOXES */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 18px 22px;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  min-width: 150px;
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.stat-box p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+/* RIGHT SIDE */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  background: #f3f4f6;
+}
+
+/* LOGIN CARD (rounded + shadow – OPTION A) */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 40px 36px;
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
+}
+
+.login-card h2 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.login-sub {
+  margin: 6px 0 26px;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* FORM STYLES */
+.login-card form label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.login-card form input {
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+  background: #ffffff;
+}
+
+.login-card form input::placeholder {
+  color: #9ca3af;
+}
+
+.login-card form input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 1px #10b98140;
+}
+
+/* OPTIONS ROW */
+.login-options {
+  margin: 14px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.remember-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #4b5563;
+}
+
+.remember-label input {
+  width: 14px;
+  height: 14px;
+}
+
+.forgot-link {
+  color: #059669;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  width: 100%;
+  border: none;
+  margin-top: 4px;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #16a34a, #0ea5e9);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(16, 163, 74, 0.35);
+}
+
+.login-btn:hover {
+  filter: brightness(1.03);
+}
+
+/* ERROR BOX */
+.error {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+  font-size: 0.9rem;
+}
+
+/* SIGNUP TEXT */
+.signup-text {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.signup-text a {
+  color: #059669;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .login-page {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .login-left {
+    min-height: 280px;
+  }
+
+  .login-left-inner {
+    padding: 40px 24px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .login-right {
+    padding: 30px 16px 40px;
+  }
+}

@@ -1,0 +1,31 @@
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { api } from "../api";
+
+export default function UserTrackPickup() {
+  const { requestId } = useParams();
+  const [url, setUrl] = useState(null);
+
+  const fetchUrl = async () => {
+    try {
+      const data = await api(`/api/pickup/request/${requestId}/pickup-location`);
+      setUrl(data.googleMapsUrl);
+
+      // 🔥 Open in new tab
+      window.open(data.googleMapsUrl, "_blank");
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  useEffect(() => {
+    fetchUrl();
+  }, [requestId]);
+
+  return (
+    <div style={{ padding: "20px", textAlign: "center" }}>
+      <h2>Opening Google Maps...</h2>
+      <p>If Google Maps didn’t open, <a href={url} target="_blank">click here</a>.</p>
+    </div>
+  );
+}

@@ -1,0 +1,259 @@
+/* MAIN PAGE */
+.register-page {
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  background: #f3f4f6;
+}
+
+/* -----------------------------------
+   LEFT GREEN PANEL  (FIXED + CLEAN)
+   ----------------------------------- */
+.register-left {
+  flex: 1.1;
+  background: linear-gradient(160deg, #1dbf73, #0aa567, #087e55);
+  color: #ffffff;
+
+  display: flex;
+  align-items: flex-start;     /* top aligned */
+  justify-content: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.register-left-inner {
+  padding: 0 50px;
+  max-width: 520px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: 20px;
+}
+
+/* BRAND */
+.brand-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.brand-sub {
+  opacity: 0.95;
+  margin: 0;
+}
+
+/* HEADING + DESCRIPTION */
+.main-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  max-width: 420px;
+  line-height: 1.25;
+  margin-top: 5px;
+}
+
+.main-heading span {
+  color: #d7ffe6;
+}
+
+.main-sub {
+  margin-top: 5px;
+  font-size: 1rem;
+  opacity: 0.95;
+  max-width: 430px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 16px 20px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.stat-box p {
+  margin: 3px 0 0;
+  opacity: 0.95;
+}
+
+/* -----------------------------------
+   RIGHT WHITE FORM PANEL
+   ----------------------------------- */
+.register-right {
+  flex: 1;
+  padding: 40px 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORM CARD */
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  padding: 40px 36px;
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
+}
+
+.register-card h2 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.register-sub {
+  margin: 6px 0 26px;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* -----------------------------------
+   NAME ROW (FIRST + LAST NAME)
+   ----------------------------------- */
+.name-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.name-field {
+  flex: 1;
+}
+
+/* FORM LABELS */
+.register-card form label {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* INPUTS + TEXTAREA */
+.register-card form input,
+.register-card form textarea {
+  width: 100%;
+  margin-top: 5px;
+
+  padding: 11px 13px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+
+  font-size: 0.95rem;
+  background: #ffffff;
+  outline: none;
+}
+
+.register-card form input:focus,
+.register-card form textarea:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 1px #10b98140;
+}
+
+.register-card form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* SUBMIT BUTTON */
+.register-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+
+  cursor: pointer;
+  background: linear-gradient(90deg, #16a34a, #0ea5e9);
+  box-shadow: 0 8px 20px rgba(16, 163, 74, 0.35);
+}
+
+.register-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* ERROR BOX */
+.error {
+  margin-top: 12px;
+  padding: 10px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+  font-size: 0.9rem;
+}
+
+/* FOOTER TEXT */
+.signup-text {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.signup-text a {
+  color: #059669;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------
+   RESPONSIVE FIXES
+   ----------------------------------- */
+
+/* Mobile: Name fields stack */
+@media (max-width: 768px) {
+  .name-row {
+    flex-direction: column;
+  }
+}
+
+/* Tablet fix: Left + Right stack cleanly */
+@media (max-width: 900px) {
+  .register-page {
+    flex-direction: column;
+  }
+
+  .register-left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .register-left-inner {
+    padding: 40px 24px;
+    gap: 16px;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .register-right {
+    padding: 30px 16px 40px;
+  }
+}
