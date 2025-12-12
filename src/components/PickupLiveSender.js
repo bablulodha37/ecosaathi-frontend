@@ -14,7 +14,7 @@ export default function PickupLiveSender({ pickupPersonId }) {
           console.log("➡️ Sending location to backend:", lat, lon);
 
           axios.put(
-  `http://localhost:8080/api/pickup/location/update/${pickupPersonId}?latitude=${lat}&longitude=${lon}`
+  `https://ecosaathi-backend.onrender.com/api/pickup/location/update/${pickupPersonId}?latitude=${lat}&longitude=${lon}`
 )
 
 

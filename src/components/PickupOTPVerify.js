@@ -9,7 +9,7 @@ export default function PickupOTPVerify() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const API_BASE = "http://localhost:8080/api/pickup";
+  const API_BASE = "https://ecosaathi-backend.onrender.com/api/pickup";
 
   const handleVerify = async () => {
     if (!otp.trim()) {

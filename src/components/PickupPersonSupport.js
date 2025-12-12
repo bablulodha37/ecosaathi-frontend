@@ -46,7 +46,7 @@ export default function PickupPersonSupport() {
   
   const [user, setUser] = useState(null);
 
-  const API_BASE = "http://localhost:8080/api/issues/pickup";
+  const API_BASE = "https://ecosaathi-backend.onrender.com/api/issues/pickup";
 
   // Fetch User Data
   useEffect(() => {

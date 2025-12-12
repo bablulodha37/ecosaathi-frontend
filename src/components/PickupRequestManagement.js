@@ -45,7 +45,7 @@ export default function PickupRequestManagement() {
     completed: 0
   });
 
-  const API_BASE_URL = "http://localhost:8080/api/pickup";
+  const API_BASE_URL = "https://ecosaathi-backend.onrender.com/api/pickup";
 
   const fetchRequests = async () => {
     try {

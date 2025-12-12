@@ -52,7 +52,7 @@ const deviceTypes = [
   { value: "Other", icon: "📦", category: "Others" }
 ];
 
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://ecosaathi-backend.onrender.com";
 
 export default function RequestForm() {
   // --- 1. HOOKS ---

@@ -65,7 +65,7 @@ export default function PickupDashboard() {
   const [userProfile, setUserProfile] = useState(null);
   const [activeRequests, setActiveRequests] = useState([]);
 
-  const API_BASE_URL = "http://localhost:8080/api/pickup";
+  const API_BASE_URL = "https://ecosaathi-backend.onrender.com/api/pickup";
 
   const fetchUserProfile = async () => {
     try {
@@ -241,7 +241,7 @@ export default function PickupDashboard() {
               {userProfile?.profilePictureUrl ? (
                 <img 
                   src={userProfile.profilePictureUrl.startsWith("./images/") 
-                    ? `http://localhost:8080${userProfile.profilePictureUrl}` 
+                    ? `https://ecosaathi-backend.onrender.com${userProfile.profilePictureUrl}` 
                     : userProfile.profilePictureUrl} 
                   alt="Profile" 
                   onError={(e) => {

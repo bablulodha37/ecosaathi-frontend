@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import "../css/NavBar.css";
 
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://ecosaathi-backend.onrender.com";
 
 export default function NavBar() {
   const navigate = useNavigate();

@@ -20,7 +20,7 @@ export default function Login() {
       // 1️⃣ Pickup Person login
       try {
         const pickupResponse = await axios.post(
-          `http://localhost:8080/api/pickup/login?email=${emailOrPhone}&password=${password}`
+          `https://ecosaathi-backend.onrender.com/api/pickup/login?email=${emailOrPhone}&password=${password}`
         );
         if (pickupResponse.data && pickupResponse.data.id) {
           user = pickupResponse.data;

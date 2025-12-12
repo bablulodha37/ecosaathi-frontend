@@ -30,7 +30,7 @@ export default function ChatBot() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8080/api/bot/chat", {
+      const res = await axios.post("https://ecosaathi-backend.onrender.com/api/bot/chat", {
         message: userMsg.text,
       });
       setMessages((prev) => [...prev, { sender: "bot", text: res.data.response }]);

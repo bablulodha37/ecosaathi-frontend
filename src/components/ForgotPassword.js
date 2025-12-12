@@ -12,7 +12,7 @@ export default function ForgotPassword() {
     const [error, setError] = useState("");
     const navigate = useNavigate();
 
-    const API_AUTH = "http://localhost:8080/api/auth";
+    const API_AUTH = "https://ecosaathi-backend.onrender.com/api/auth";
 
     // Step 1: Send OTP
     const handleSendOtp = async (e) => {

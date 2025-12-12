@@ -11,7 +11,7 @@ export default function PickupProfile() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/pickup/${id}`)
+      .get(`https://ecosaathi-backend.onrender.com/api/pickup/${id}`)
       .then((res) => {
         setProfile(res.data);
         setError(null);

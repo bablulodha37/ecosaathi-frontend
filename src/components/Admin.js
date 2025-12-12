@@ -73,7 +73,7 @@ export default function Admin() {
     pending: 0
   });
   const navigate = useNavigate();
-  const API_BASE_URL = 'http://localhost:8080/api/admin';
+  const API_BASE_URL = 'https://ecosaathi-backend.onrender.com/api/admin';
 
   // ⭐ NEW — REFRESH FIX
   useEffect(() => {

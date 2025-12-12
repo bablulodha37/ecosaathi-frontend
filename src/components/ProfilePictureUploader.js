@@ -3,7 +3,7 @@ import axios from "axios";
 import { FaUserCircle, FaUpload } from "react-icons/fa";
 
 // The base URL for the backend Spring Boot server
-const API_BASE_URL = 'http://localhost:8080'; 
+const API_BASE_URL = 'https://ecosaathi-backend.onrender.com'; 
 
 export default function ProfilePictureUploader({ userId, currentUrl, onUploadSuccess }) {
     const [file, setFile] = useState(null);

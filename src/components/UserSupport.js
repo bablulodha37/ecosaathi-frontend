@@ -60,7 +60,7 @@ export default function UserSupport() {
   const [activeNavTab, setActiveNavTab] = useState('support');
   const [notifications, setNotifications] = useState([]);
 
-  const API_BASE = "http://localhost:8080/api/issues";
+  const API_BASE = "https://ecosaathi-backend.onrender.com/api/issues";
 
   // Fetch User Data
   useEffect(() => {
