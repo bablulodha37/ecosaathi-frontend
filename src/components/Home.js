@@ -223,17 +223,6 @@ export default function Home() {
         {/* Animated Background Gradient */}
         <div className="hero-gradient"></div>
         
-        {/* Logo with Animation */}
-        <div className="branding-logo-modern animate-fade-in">
-          <div className="logo-icon-modern">
-            <span className="recycle-icon">♻️</span>
-          </div>
-          <div className="logo-text-modern">
-            <span className="main-text-modern">EcoSaathi</span>
-            <span className="domain-text-modern">.com</span>
-          </div>
-        </div>
-
         {/* Hero Content */}
         <div className="hero-content-modern">
           {/* Typing Text with Cursor */}
